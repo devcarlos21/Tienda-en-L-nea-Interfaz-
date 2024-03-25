@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Store</title>
+
+    <!-- Cargamos normalize -->
+    <link rel="preload" href="CSS/normalize.css" as="style">
+    <link rel="stylesheet" href="CSS/normalize.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preload" href="CSS/style.css" as="style">
+    <link rel="stylesheet" href="CSS/style.css">
+
+
+</head>
+
+<body class="contenedor">
+    <header class="header"> <!-- BLOQUE -->
+        <a href="index.html">
+            <!-- ELEMENTO -->
+            <img class="header__logo" src="img/logo.png" alt="Logotipo">
+            <!--Alt describe y te ayuda al posicionamiento web-->
+        </a>
+    </header>
+
+    <nav class="navegacion">
+        <a class="navegacion__enlace" href="index.html">Tienda</a>
+        <a class="navegacion__enlace navegacion__enlace--activo" href="nosotros.html">Nosotros</a>
+    </nav>
+
+    <main class="contenedor">
+        <h1>EJEMPLO PLAYERA</h1>
+
+        <div class="camisa">
+            <img class="camisa__imagen" src="img/7.jpg" alt="camisa_ejemplo">
+            <div class="camisa__contenido">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, veritatis, iste maxime incidunt
+                    qui dolorum et similique libero voluptate voluptas facilis minus quis id, culpa laborum saepe.
+                    Ratione, commodi atque?</p>
+
+                <form class="formulario" action="">
+                    <select class="formulario__campo" name="tallas" id="id_tallas">
+                        <option value="" disabled selected>-- Seleccionar Talla --</option> <!-- Es predeterminado pero no se puede seleccionar-->
+                        <option value="">Chica</option>
+                        <option value="">Mediana</option>
+                        <option value="">Grande</option>
+                    </select>
+
+                    <input class="formulario__campo" type="number" placeholder="Cantidad" min="1">
+                    <input class="formulario__submit" type="submit" value="Agregar al Carrito">
+
+                </form>
+            </div>
+        </div>
+
+
+    </main>
+
+
+
+    <footer class="footer">
+        <p class="footer__texto">Developer Store - Todos los Derechos Reservados 2024</p>
+    </footer>
+
+</body>
+
+</html>
